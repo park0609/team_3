@@ -1,1 +1,27 @@
 팀 파일
+class Calculator :
+    def __init__(self):
+        self.result = 0
+    def mult(self,num):
+        self.result *= num
+    	return self.result
+
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
+    def add(self):
+        return self.a+self.b
+
+    def __init__(self):
+        self.result = 1 
+    
+    def div(self,num):
+        self.result /= num
+        return self.result
+
+add = Add(3,8)
+result = add.add()
+print('결과는', result)
+
+    

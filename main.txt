@@ -1,66 +1,22 @@
-팀 파일
-class Calculator :
+class Calculator:
     def __init__(self):
-        self.result = 0
+        self.result1 = 0
+        self.result2 = 1
+        
     def mult(self,num):
-        self.result *= num
-<<<<<<< HEAD
-    	return self.result
+        self.result2 *= num
+        return self.result2
 
-=======
-<<<<<<< HEAD
-    	return self.result
-
-=======
->>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00
-	return self.result
-
-덧셈
-class Add:
-<<<<<<< HEAD
-=======
->>>>>>> 3aaae64fa71a55c7d8e9f395b6482a24a5470fb7
->>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00
-    def __init__(self,a,b):
-        self.a = a
-        self.b = b
-
-    def add(self):
-        return self.a+self.b
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00
-    def __init__(self):
-        self.result = 1 
+    def add(self,num):
+        self.result1 += num
+        return self.result1 
     
     def div(self,num):
-        self.result /= num
-        return self.result
+        self.result2 /= num
+        return self.result2
+        
+    def sub(self,num):
+        self.result1 -= num
+        return self.result1
 
-add = Add(3,8)
-result = add.add()
-print('결과는', result)
 
-<<<<<<< HEAD
-
-add = Add(3,8)
-result = add.add()
-print('결과는', result)
-
-뺄셈 
-class Calculator:
-    def __init__(self, first, second):
-        self.result = 2
-    def sub(self):
-        self.result -= num
-        return result 
-=======
-    
-=======
-add = Add(3,8)
-result = add.add()
-print('결과는', result)
->>>>>>> 3aaae64fa71a55c7d8e9f395b6482a24a5470fb7
->>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00

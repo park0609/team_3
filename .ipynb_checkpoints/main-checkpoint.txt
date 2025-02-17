@@ -4,8 +4,11 @@ class Calculator :
         self.result = 0
     def mult(self,num):
         self.result *= num
+<<<<<<< HEAD
     	return self.result
 
+=======
+>>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00
 	return self.result
 
 덧셈
@@ -17,6 +20,7 @@ class Add:
     def add(self):
         return self.a+self.b
 
+<<<<<<< HEAD
     def __init__(self):
         self.result = 1 
     
@@ -40,3 +44,8 @@ class Calculator:
     def sub(self):
         self.result -= num
         return result 
+=======
+add = Add(3,8)
+result = add.add()
+print('결과는', result)
+>>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00

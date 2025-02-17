@@ -4,12 +4,23 @@ class Calculator :
         self.result = 0
     def mult(self,num):
         self.result *= num
+<<<<<<< HEAD
     	return self.result
 
+=======
+<<<<<<< HEAD
+    	return self.result
+
+=======
+>>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00
 	return self.result
 
 덧셈
 class Add:
+<<<<<<< HEAD
+=======
+>>>>>>> 3aaae64fa71a55c7d8e9f395b6482a24a5470fb7
+>>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00
     def __init__(self,a,b):
         self.a = a
         self.b = b
@@ -17,6 +28,10 @@ class Add:
     def add(self):
         return self.a+self.b
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00
     def __init__(self):
         self.result = 1 
     
@@ -28,6 +43,7 @@ add = Add(3,8)
 result = add.add()
 print('결과는', result)
 
+<<<<<<< HEAD
 
 add = Add(3,8)
 result = add.add()
@@ -40,3 +56,11 @@ class Calculator:
     def sub(self):
         self.result -= num
         return result 
+=======
+    
+=======
+add = Add(3,8)
+result = add.add()
+print('결과는', result)
+>>>>>>> 3aaae64fa71a55c7d8e9f395b6482a24a5470fb7
+>>>>>>> e25ce5ee17f862c9ccc4a00f68c22c9fd425de00

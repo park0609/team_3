@@ -1,18 +1,20 @@
-import requests as req
-from bs4 import BeautifulSoup as bs
+import requests 
+from bs4 import BeautifulSoup 
 url = "https://www.melon.com/chart/index.htm"
-headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'}
-web = req.get(url,headers = headers)
+headers = {
+    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+}
 
-def mel():
-    soup = bs(web.content, 'html.parser')
-    title = soup.select('.wrap_song_info .rank01')[:20]
-    name = soup.select('.checkEllipsis a')[:20]  # 20위까지 !!
-    str = ''
-    for i,(t,n) in enumerate(zip(title, name),1):
-        str += f'{i}위 : {t.text.strip()} / {n.text}\n'
-    print(str, end = ' ')
+response = requests.get(url, headers=headers)
+if response.status_code == 200:
+    soup = BeautifulSoup(response.content,"html.parser")
+    song_titles = soup.select("div.ellipsis.rank01 a")
+    artists = soup.select("div.ellipsis.rank02 span.checkEllipsis")
+    for idx, (title, artist) in enumerate(zip(song_titles,artists), start=1):
+        print(f"{idx}위: {title.text.strip()} - {artist.text.strip()}")
+else: 
+    print(f"페이지를 불러오는 데 실패했습니다. 상태 코드: {response.status_code}")
 
-if __name__ =='__main__':
-    mel()
+
+
 

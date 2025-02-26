@@ -1,8 +1,33 @@
-import requests as req
-def movie():
-    url= 'http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=1f1209fd1763d09de17660c9fe336cc1&targetDt=20250215&boxofficeType'
-    res = req.get(url).json()
-    result = res['boxOfficeResult']['dailyBoxOfficeList']
-    
-    for n in result:
-        print(n["rank"],n["movieNm"])
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d87152f4-b74f-4310-9900-4bad64700b14",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

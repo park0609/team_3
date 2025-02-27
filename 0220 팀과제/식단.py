@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import requests as req
 from bs4 import BeautifulSoup as bs
 url = "https://www.pusan.ac.kr/kor/CMS/MenuMgr/menuListOnBuilding.do?mCode=MN202"
